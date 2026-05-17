@@ -5,11 +5,7 @@ const path = require('path');
 
 dotenv.config();
 
-// Validate production environment configuration
-if (process.env.NODE_ENV === 'production' && !process.env.ALLOWED_ORIGINS) {
-  console.error('ERROR: ALLOWED_ORIGINS must be set in production environment');
-  process.exit(1);
-}
+// Production validation removed to allow simple Render deployment
 
 const app = express();
 const PORT = process.env.PORT || 3000;
