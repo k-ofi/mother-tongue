@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/analyze';
+const API_URL = 'https://mother-tongue.onrender.com/api/analyze';
 const LANGUAGES_URL = 'http://localhost:3000/api/languages';
 const REPO_URL = 'http://localhost:3000/api/analyze-repo';
 
