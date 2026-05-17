@@ -98,7 +98,7 @@ app.use((err, req, res, next) => {
 });
 
 // Graceful shutdown handler
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`Mother-Tongue server running on port ${PORT}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`CORS enabled for: ${corsOptions.origin === '*' ? 'all origins (development)' : corsOptions.origin}`);
